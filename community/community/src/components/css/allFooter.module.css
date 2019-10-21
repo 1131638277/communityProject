@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: -apple-system, SF UI Text, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #fbfbfb;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    height: 120px;
+    width: 100%;
+}
+
+footer>.agreement {
+    width: 980px;
+    margin: 0 auto;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.agreement>li>a {
+    font-size: 14px;
+    color: #fff;
+}
+
+footer>.footerText>p {
+    font-size: 14px;
+    color: #999;
+    font-size: 11px;
+    line-height: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer>.footerText>p>.police {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background-image: url('../imgs/police.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

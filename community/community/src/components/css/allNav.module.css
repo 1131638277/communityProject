@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(206, 204, 204, 0.397);
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bgcVideo {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+nav {
+    min-width: 1274px;
+    height: 106px;
+    z-index: 100;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divLogo {
+    cursor: pointer;
+    width: 72px;
+    height: 25px;
+}
+
+.imgLogo {
+    width: 100%;
+    height: 100%;
+}
+
+.navPage {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 800px;
+}
+
+.navPage>li>a {
+    font-size: 16px;
+    color: #fff;
+}
+
+.navPage>li>a:hover {
+    color: #ff2442;
+}
+
+.navPage>.homePage {
+    position: relative;
+}
+
+.navPage>.homePage::before {
+    position: absolute;
+    bottom: -10px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: hsla(0, 0%, 100%, .5);
+    border-radius: 2px;
+}
+
+.navPage>.imgHeader {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navPage>.imgHeader>img {
+    width: 100%;
+    height: 100%;
+}
+
+.navPage>.imgHeader>.arrow {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    border: 5px solid rgba(158, 156, 156, 0.267);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid transparent;
+    display: none;
+}
+
+.navPage>.imgHeader>.login {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    left: -24px;
+    top: 35px;
+    background-color: rgba(158, 156, 156, 0.267);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    display: none;
+}
+
+.navPage>.imgHeader:hover>.arrow,
+.navPage>.imgHeader:hover>.login {
+    display: block;
+}
+
+.bgcLogin {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(155, 154, 154, 0.6);
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerLogin {
+    width: 400px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 3px 10px rgb(20, 20, 20);
+    border-radius: 6px;
+    position: relative;
+}
+
+.registerLogin>.cha {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 375px;
+    top: 5px;
+    background-image: url("../imgs/cha.png");
+    background-size: 100%;
+}
+
+.registerLogin>.cha:hover{
+    background-image: url("../imgs/cha1.png");
+}
+
+.registerLogin>.option {
+    width: 350px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* 利用global将class的属性申明额为全局规则，是class名不会被编译成哈希字符串，就可以覆盖以前的样式了 */
+/* loginAssembly为自己定义的组件的class名，用来规定只在这个组件中使用，ant-tabs-nav-scroll为组件自带的类名是你要修改的确切的元素类名 */
+:global(.loginAssembly .ant-tabs-nav-scroll) {
+    display: flex;
+    justify-content: center;
+}
+
+.leftLogin{
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+}
+.rightRegister{
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.registerLogin>.option>.loginAssembly .optionTitle {
+    color: aqua;
+}
+
+.shortNavNone {
+    display: none;
+}
+
+.shortNavBlock {
+    height: 60px;
+    position: fixed;
+    top: 0;
+}
+
+.longNavBlock {
+    visibility: visible;
+}
+
+.longNavNone {
+    visibility: hidden;
+}
+
+.ss {
+    color: tomato;
+    width: 20px;
+    height: 360px;
+}
+.registerLoginDis{
+    display: none;
+}

@@ -1,0 +1,22 @@
+.loginForm {
+  max-width: 300px;
+}
+
+.loginFormForgot {
+  float: right;
+}
+
+.loginFormButton {
+  width: 100%;
+}
+
+.yzcode {
+  width: 100%;
+}
+
+.yzcodeRow {
+  width: 190px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
